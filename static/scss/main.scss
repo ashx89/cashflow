@@ -1,0 +1,18 @@
+@import "vendor/mixins";
+@import "core/colors";
+@import "layouts/header";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	@include box-sizing(border-box);
+}
+
+body {
+	background-color: $lightgray;
+}
+
+.wrapper {
+	padding: 0 20px;
+}

@@ -1,0 +1,13 @@
+.header {
+	background: $primary;
+
+	.logo {
+		display: inline-block;
+		a {
+			color: #fff;
+			display: block;
+			padding: 10px 0;
+			text-decoration: none;
+		}
+	}
+}
