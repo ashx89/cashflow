@@ -6,9 +6,11 @@ function Main(props) {
 	return (
 		<main className="main">
 			<Header />
-			<section className="content">
-				{props.children}
-			</section>
+			<div className="content">
+				<div className="wrapper">
+					{props.children}
+				</div>
+			</div>
 		</main>
 	);
 }
