@@ -17,7 +17,7 @@ class InvoiceContainer extends Component {
 
 	render() {
 		return (
-			<section className="card--list">
+			<section className="card">
 				<InvoiceCollection invoices={this.state.invoices} />
 			</section>
 		);

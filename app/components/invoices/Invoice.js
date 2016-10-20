@@ -2,17 +2,16 @@ import React, { PropTypes } from 'react';
 
 function Invoice({ invoice }) {
 	return (
-		<tr className="invoice__row">
-			<td>{invoice.date}</td>
-			<td>{invoice.id}</td>
-			<td>{invoice.account}</td>
-			<td>{invoice.description}</td>
-			<td>{invoice.customer}</td>
-			<td>{invoice.amount}</td>
-			<td>{invoice.vat}</td>
-			<td>{invoice.total}</td>
-			<td>{invoice.status}</td>
-		</tr>
+		<div className="table__row">
+			{Object.keys(invoice).map((prop, index) => {
+				return (
+					<div className="table__cell__group" key={index}>
+						<div className="table__cell">{prop}</div>
+						<div className="table__cell">{invoice[prop]}</div>
+					</div>
+				);
+			})}
+		</div>
 	);
 }
 
