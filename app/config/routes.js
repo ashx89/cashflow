@@ -2,12 +2,15 @@ import React from 'react';
 import ReactRouter, { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 import Main from '../layouts/Main';
-import InvoiceContainer from '../components/invoices/InvoiceContainer';
+import Dashboard from '../layouts/Dashboard';
+// import InvoiceContainer from '../components/invoices/InvoiceContainer';
+
+import data from '../data';
 
 export default (
 	<Router history={browserHistory}>
 		<Route path="/" component={Main}>
-			<IndexRoute component={InvoiceContainer} />
+			<IndexRoute component={Dashboard} data={data} />
 		</Route>
 	</Router>
 );

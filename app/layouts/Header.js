@@ -6,7 +6,7 @@ function Header() {
 		<header className="header">
 			<div className="wrapper">
 				<h1 className="logo">
-					<Link to="/">Cashflow</Link>
+					<Link to="/">App</Link>
 				</h1>
 			</div>
 		</header>

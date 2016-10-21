@@ -1,16 +1,15 @@
 import React, { PropTypes } from 'react';
 
+/**
+ * Displays a single collection item
+ * @param {object} invoice. A single object of data
+ * @param {boolean} label. Whether to display the key of the value
+ */
 function Invoice({ invoice }) {
 	return (
-		<div className="table__row">
-			{Object.keys(invoice).map((prop, index) => {
-				return (
-					<div className="table__cell__group" key={index}>
-						<div className="table__cell">{prop}</div>
-						<div className="table__cell">{invoice[prop]}</div>
-					</div>
-				);
-			})}
+		<div className="collection__row">
+			{Object.keys(invoice).map((prop, index) =>
+				<p className="collection__item" key={index}>{invoice[prop]}</p>)}
 		</div>
 	);
 }

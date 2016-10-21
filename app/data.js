@@ -9,8 +9,18 @@ module.exports = {
 			amount: 10000,
 			vat: 0.2,
 			total: 0,
-			status: 'paid',
-			account: ''
+			status: 'paid'
+		},
+		{
+			id: 12346,
+			type: 'invoice',
+			customer: 'TomTom',
+			date: '21/04/2013',
+			description: 'Contracting',
+			amount: 32000,
+			vat: 0.2,
+			total: 0,
+			status: 'paid'
 		}
 	],
 	expenses: [
@@ -23,8 +33,7 @@ module.exports = {
 			amount: 75,
 			vat: 0.2,
 			total: 0,
-			status: 'paid',
-			account: 'business'
+			status: 'paid'
 		}
 	]
 };

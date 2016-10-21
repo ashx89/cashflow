@@ -1,0 +1,31 @@
+.table {
+	width: 100%;
+	border-collapse: collapse;
+
+	&__head {
+		width: inherit;
+		text-align: left;
+		margin-bottom: 10px;
+		border-bottom: 1px solid $lightgray;
+
+		.table__row .table__cell { padding-top: 0; }
+	}
+
+	&__body {
+		width: inherit;
+	}
+
+	&__row {
+		width: inherit;
+		margin-bottom: 10px;
+		padding-bottom:  10px;
+		border-bottom: 1px solid $lightgray;
+		&:nth-child(even) { }
+	}
+
+	&__cell {
+		padding: 7px 20px 7px 0;
+		&:last-child { padding-right: 0; }
+		&:first-letter { text-transform: uppercase; }
+	}
+}

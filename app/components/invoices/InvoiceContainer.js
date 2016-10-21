@@ -3,6 +3,12 @@ import InvoiceCollection from './InvoiceCollection';
 
 import { invoices } from '../../data';
 
+
+/**
+ * Class representing a collection of data
+ * @param {array} invoices. Array of objects
+ * @param {string} layout. CSS class of how to style the data
+ */
 class InvoiceContainer extends Component {
 	constructor() {
 		super();
@@ -11,14 +17,20 @@ class InvoiceContainer extends Component {
 		};
 	}
 
+	/**
+	 * Set the state to the data
+	 */
 	componentWillMount() {
-		this.setState({ invoices: invoices });
+		this.setState({ invoices });
 	}
 
+	/**
+	 * Render the collection
+	 */
 	render() {
 		return (
 			<section className="card">
-				<InvoiceCollection invoices={this.state.invoices} />
+				<InvoiceCollection layout={'table'} invoices={this.state.invoices} />
 			</section>
 		);
 	}
