@@ -1,0 +1,20 @@
+.sidebar {
+	float: left;
+	width: 20%;
+	padding-right: 20px;
+
+	&__section {
+		background-color: #fff;
+	}
+
+	&__heading {
+		background-color: $darkgray;
+		color: #fff;
+		padding: 5px 10px;
+	}
+}
+
+.content {
+	float: left;
+	width: 80%;
+}

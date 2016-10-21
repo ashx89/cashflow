@@ -8,7 +8,10 @@
 		margin-bottom: 10px;
 		border-bottom: 1px solid $lightgray;
 
-		.table__row .table__cell { padding-top: 0; }
+		.table__row .table__cell {
+			color: $darkgray;
+			padding-top: 0;
+		}
 	}
 
 	&__body {
@@ -24,7 +27,7 @@
 	}
 
 	&__cell {
-		padding: 7px 20px 7px 0;
+		padding: 10px 20px 10px 10px;
 		&:last-child { padding-right: 0; }
 		&:first-letter { text-transform: uppercase; }
 	}

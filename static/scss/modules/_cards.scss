@@ -1,6 +1,24 @@
 .card {
 	background-color: #fff;
 	padding: 20px;
-	box-shadow: 0 2px 2px rgba(0,0,0,.1);
+	// box-shadow: 0 2px 2px rgba(0,0,0,.1);
 	margin-bottom: 15px;
+	border-top: 2px solid $primary;
+
+	&--no-padding {
+		@extend .card;
+		padding: 0;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+
+		&--labelled {
+			@extend .card__title;
+			padding: 10px;
+			background-color: $primary;
+			color: #fff;
+			display: inline-block;
+		}
+	}
 }

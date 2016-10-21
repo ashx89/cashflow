@@ -1,3 +1,11 @@
+@mixin clearfix {
+	&:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+
 @mixin box-sizing($sizing) {
 	-ms-box-sizing: $sizing;
 	-moz-box-sizing: $sizing;

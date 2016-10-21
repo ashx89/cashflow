@@ -6,10 +6,8 @@ function Main(props) {
 	return (
 		<main className="main">
 			<Header />
-			<div className="content">
-				<div className="wrapper">
-					{props.children}
-				</div>
+			<div className="main--wrap">
+				{props.children}
 			</div>
 		</main>
 	);

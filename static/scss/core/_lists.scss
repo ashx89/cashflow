@@ -1,0 +1,11 @@
+.list {
+	list-style: none;
+
+	&__item {
+		&__link {
+			display: block;
+			padding: 10px;
+			border-bottom: 1px solid $lightgray;
+		}
+	}
+}

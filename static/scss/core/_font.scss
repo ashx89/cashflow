@@ -5,6 +5,12 @@ h4, .h4 { font-size: 1.12em; }
 h5, .h5 { font-size: .83em; }
 h6, .h6 { font-size: .75em; }
 
-p,td {
+p,td,li {
 	font-size: .83em;
+}
+
+a {
+	color: $primary;
+	text-decoration: none;
+	&:hover { text-decoration: underline; }
 }
